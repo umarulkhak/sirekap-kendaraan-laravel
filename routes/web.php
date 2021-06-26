@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KendaraanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth/login');
 });
+
+Auth::routes();
+
+Route::get('/home', [KendaraanController::class, 'home'])->name('home')->middleware('auth');
+
+Route::get('/form-tambah', function () {
+    return view('form-tambah');
+})->middleware('auth');
+
+Route::post('/tambah', [KendaraanController::class, 'tambah'])->middleware('auth');
+Route::get('/hapus-kendaraan/{id}', [KendaraanController::class, 'hapus'])->middleware('auth');
+Route::get('/ubah-kendaraan/{id}', [KendaraanController::class, 'formUbah'])->middleware('auth');
+Route::post('/ubah-kendaraan', [KendaraanController::class, 'ubah'])->middleware('auth');
+Route::get('/download-pdf', [KendaraanController::class, 'downloadPDF']);
