@@ -14,9 +14,11 @@ use App\Http\Controllers\KendaraanController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [KendaraanController::class, 'login']);
 
 Auth::routes();
 
