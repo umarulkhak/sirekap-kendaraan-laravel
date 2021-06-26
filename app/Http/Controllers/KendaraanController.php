@@ -9,10 +9,6 @@ use Codedge\Fpdf\Fpdf\Fpdf;
 
 class KendaraanController extends Controller
 {
-    public function login()
-    {
-        return view('auth/login');
-    }
     public function home()
     {
         $hasil = Kendaraan::all();
