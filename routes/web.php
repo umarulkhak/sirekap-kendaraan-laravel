@@ -15,7 +15,7 @@ use App\Http\Controllers\KendaraanController;
 */
 
 Route::get('/', function () {
-    return view('auth');
+    return view('/home');
 });
 
 Auth::routes();
