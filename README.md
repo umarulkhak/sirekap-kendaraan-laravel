@@ -1,6 +1,6 @@
 <h3 align="center">Selamat datang di Sistem Informasi Rekam Data Kendaraan! 👋</h3>
 
-Web Sistem Informasi Rekam Data Kendaraan yang dibuat oleh <a href="https://github.com/umarulkhak"> Umar Ulkhak </a>. **Sistem Informasi Rekam Data Kendaraan dibuat sebagai Ujian Akhir Semester Mata Kuliah Framework Programming.**
+**Sistem Informasi Rekam Data Kendaraan dibuat sebagai Ujian Akhir Semester Mata Kuliah Framework Programming.**
 
 ## Fitur apa saja yang tersedia di Sistem Informasi Akademik Sekolah?
 
