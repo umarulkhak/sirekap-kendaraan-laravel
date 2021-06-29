@@ -2,7 +2,7 @@
 
 **Sistem Informasi Rekam Data Kendaraan dibuat sebagai Ujian Akhir Semester Mata Kuliah Framework Programming.**
 
-## Fitur apa saja yang tersedia di Sistem Informasi Akademik Sekolah?
+## Fitur apa saja yang tersedia di Sistem Informasi?
 
 -   Autentikasi
 -   CRUD
